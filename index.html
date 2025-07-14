@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Phonebook App</title>
+  <style>
+    body { font-family: Arial; max-width: 500px; margin: auto; }
+    form input, form button { margin: 8px 0; display: block; width: 100%; padding: 8px; }
+    ul { list-style: none; padding: 0; }
+    li { margin: 10px 0; padding: 10px; background: #f2f2f2; border-radius: 5px; }
+    button { margin-left: 10px; }
+  </style>
+</head>
+<body>
+  <h2>📞 Phonebook</h2>
+
+  <form id="contactForm">
+    <input type="hidden" id="contactId">
+    <input type="text" id="name" placeholder="Enter Name" required>
+    <input type="text" id="phone" placeholder="Enter Phone Number" required>
+    <button type="submit">Save Contact</button>
+  </form>
+
+  <h3>📋 Contact List</h3>
+  <ul id="contactList"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
